@@ -18,15 +18,15 @@ services:
       - ./app/entrypoint-nginx.sh:/entrypoint.sh
       - ./symfony:/app/symfony
       - ./app/www.conf:/etc/php/8.2/fpm/pool.d/www.conf
-  db:
-    image: mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: abc123.
-      MYSQL_DATABASE: dblemp
-      MYSQL_USER: user
-      MYSQL_PASSWORD: abc123.
-    volumes:
-      - basedatos:/var/lib/mysql
+ # db:
+   # image: mysql
+   # environment:
+     # MYSQL_ROOT_PASSWORD: abc123.
+     # MYSQL_DATABASE: dblemp
+    #  MYSQL_USER: user
+   #   MYSQL_PASSWORD: abc123.
+  #  volumes:
+ #     - basedatos:/var/lib/mysql
 
-volumes:
-  basedatos:
+#volumes:
+#  basedatos:
